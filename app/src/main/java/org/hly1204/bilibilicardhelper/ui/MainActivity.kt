@@ -7,6 +7,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 
+import org.hly1204.bilibilicardhelper.ui.theme.BilibiliCardHelperTheme
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +20,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun BilibiliCardHelper() {
-    Text(text = "Hello, Android!")
+    BilibiliCardHelperTheme {
+        Text(text = "Hello, Android!")
+    }
 }
 
 @Preview
