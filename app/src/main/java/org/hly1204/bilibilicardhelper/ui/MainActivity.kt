@@ -11,18 +11,18 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Text(text = "Hello, Android!")
+            BilibiliCardHelper()
         }
     }
 }
 
 @Composable
-private fun bilibiliCardHelper() {
+private fun BilibiliCardHelper() {
     Text(text = "Hello, Android!")
 }
 
 @Preview
 @Composable
-private fun bilibiliCardHelperPreview() {
-    bilibiliCardHelper()
+private fun BilibiliCardHelperPreview() {
+    BilibiliCardHelper()
 }
